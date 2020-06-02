@@ -39,3 +39,12 @@ client server static NumberSequenceReference numRefBOAT_CustID()
 }
 
 
+>>  STEP 4 : Table: ชื่อTable_Parameter 
+เข้าไป ในส่วนของ Method เข้าไปในส่วนของ NumRefXXXXX ทำการคักลอกสร้าง Method ใหม่ออกมา 
+
+client server static NumberSequenceReference numRefBOAT_CustID()
+{
+    return NumberSeqReference::findReference(extendedTypeNum(BOAT_CustID));
+}
+
+
