@@ -29,4 +29,13 @@
     NumberSeqApplicationModule::loadall();
     }
 
+ >> STEP 3 : เข้าไป Table : ชื่อModule_Parameter  
+ไปสร้าง Methode
+ex. Cust >> CustParameter
+
+client server static NumberSequenceReference numRefBOAT_CustID()
+{
+    return NumberSeqReference::findReference(extendedTypeNum(BOAT_CustID));
+}
+
 
