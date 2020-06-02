@@ -1,0 +1,26 @@
+    // BOAT_CustID Number Sequence 
+     datatype.parmDatatypeId(extendedTypeNum(BOAT_CustID));
+     datatype.parmReferenceHelp(literalStr("Boat - Customer ID"));
+    
+     datatype.parmWizardIsContinuous(true);
+     datatype.parmWizardIsManual(NoYes::No);
+     datatype.parmWizardIsChangeDownAllowed(NoYes::No);
+     datatype.parmWizardIsChangeUpAllowed(NoYes::No);
+     datatype.parmWizardHighest(9999);
+     datatype.parmSortField(57);  // ใส่ลำดับไปเลย
+     datatype.addParameterType(NumberSeqParameterType::DataArea, true, false);
+     this.create(datatype);
+ 
+    
+    this.mcrLoadModules(datatype);
+    
+    
+    
+    -------------------------------------
+    
+    หลังจากนั้นไปสร้าง JOB สำหรับ Log : NumberSeqApplicationMoudule::loadall();
+    
+    static void NumberSeqLoadAll(Args _args)
+    {
+    NumberSeqApplicationModule::loadall();
+    }
