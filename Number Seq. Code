@@ -11,7 +11,7 @@
      datatype.parmWizardIsChangeDownAllowed(NoYes::No);
      datatype.parmWizardIsChangeUpAllowed(NoYes::No);
      datatype.parmWizardHighest(9999);
-     datatype.parmSortField(57);  // ใส่ลำดับไปเลย
+     datatype.parmSortField(57);  // ลำดับในการแสดงพารามิเตอร์ 
      datatype.addParameterType(NumberSeqParameterType::DataArea, true, false);
      this.create(datatype);
  
