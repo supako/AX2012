@@ -5,10 +5,8 @@
      **เอาโค้ดไปแทรก**
      
      datatype.parmDatatypeId(extendedTypeNum(BOAT_CustID));
-     datatype.parmReferenceHelp(literalStr("Boat - Customer ID"));
-    
-    
-     datatype.parmWizardIsContinuous(true);
+     datatype.parmReferenceHelp(literalStr("Boat - Customer ID"));  
+     datatype.parmWizardIsContinuous(true);  // เป็นการ SET มันเป็น Continue หรือเปล่า
      datatype.parmWizardIsManual(NoYes::No);
      datatype.parmWizardIsChangeDownAllowed(NoYes::No);
      datatype.parmWizardIsChangeUpAllowed(NoYes::No);
