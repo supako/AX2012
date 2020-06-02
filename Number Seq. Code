@@ -1,6 +1,6 @@
     // BOAT_CustID Number Sequence 
-    
-     เข้าที่ Class >> NumberSeqModuleCustomer :: loadModue(usr)
+   
+  >> STEP 1 : เข้าที่ Class >> NumberSeqModuleCustomer :: loadModue(usr)
     
      **เอาโค้ดไปแทรก**
      
@@ -24,9 +24,11 @@
     
     -------------------------------------
     
-    หลังจากนั้นไปสร้าง JOB สำหรับ Log : NumberSeqApplicationMoudule::loadall();
+  >>  STEP 2 : หลังจากนั้นไปสร้าง JOB สำหรับ Log : NumberSeqApplicationMoudule::loadall();
     
     static void NumberSeqLoadAll(Args _args)
     {
     NumberSeqApplicationModule::loadall();
     }
+
+
