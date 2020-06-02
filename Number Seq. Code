@@ -1,6 +1,12 @@
     // BOAT_CustID Number Sequence 
+    
+     เข้าที่ Class >> NumberSeqModuleCustomer :: loadModue(usr)
+    
+     **เอาโค้ดไปแทรก**
+     
      datatype.parmDatatypeId(extendedTypeNum(BOAT_CustID));
      datatype.parmReferenceHelp(literalStr("Boat - Customer ID"));
+    
     
      datatype.parmWizardIsContinuous(true);
      datatype.parmWizardIsManual(NoYes::No);
